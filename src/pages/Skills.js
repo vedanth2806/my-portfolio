@@ -6,35 +6,34 @@ const Skills = () => {
     {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Express.js", level: 80 },
-        { name: "RESTful APIs", level: 90 },
-        { name: "Database Design", level: 75 }
+        { name: "Node.js", level: 60 },
+        { name: "Express.js", level: 20 },
+        { name: "RESTful APIs", level: 20 },
+        { name: "Database Design", level: 60 }
       ]
     },
     {
       title: "Frontend Development",
       skills: [
-        { name: "React", level: 80 },
-        { name: "Flutter", level: 75 },
-        { name: "JavaScript", level: 85 },
-        { name: "HTML/CSS", level: 90 }
+        { name: "React", level: 30 },
+        { name: "Flutter", level: 30 },
+        { name: "JavaScript", level: 60 },
+        { name: "HTML/CSS", level: 60 }
       ]
     },
     {
       title: "Low-Code/No-Code",
       skills: [
-        { name: "Mendix", level: 80 },
-        { name: "Platform Development", level: 75 }
+        { name: "Mendix", level: 60 },
+        { name: "Platform Development", level: 65 }
       ]
     },
     {
       title: "Tools & Technologies",
       skills: [
-        { name: "Git", level: 85 },
-        { name: "Docker", level: 70 },
-        { name: "MongoDB", level: 75 },
-        { name: "PostgreSQL", level: 70 }
+        { name: "Git", level: 60 },
+        { name: "Docker", level: 20 },
+        { name: "MySQL", level: 60 },
       ]
     }
   ];

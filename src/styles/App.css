@@ -280,6 +280,73 @@ background :linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 /* Skills Page Styles */
+/* =========  Animated-border skill pills  ========= */
+
+/* ========================================================
+   Animated-border skill pills (one coloured line circulates)
+   ======================================================== */
+
+/* layout of each skill row */
+.skill-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:8px 0;
+  font-size:.95rem;
+}
+
+/* ---------- pill base ---------- */
+.skill-pill{
+  position:relative;
+  padding:6px 18px;
+  border-radius:999px;
+  font-size:.8rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+  color:#fff;                  /* white text */
+  /* background:#191924; */
+  background: linear-gradient(135deg, #667eea, #764ba2);;          /* inner fill; change to suit */
+  border:none;                 /* border drawn by ::before */
+  overflow:hidden;             /* keep line inside rounded shape */
+}
+
+/* ---------- animated line ---------- */
+.skill-pill::before{
+  content:'';
+  position:absolute;
+  inset:0;                     /* stretch to pill edges */
+  border-radius:inherit;
+
+  /* narrow 3-degree slice in your brand gradient, rest transparent */
+  background:conic-gradient(#667eea 0deg 3deg,
+                            #764ba2 3deg 6deg,
+                            transparent 6deg 360deg);
+
+  /* show background only on a 2-px ring area */
+  padding:2px;                                /* ring thickness */
+  mask:linear-gradient(#000 0 0) content-box,
+       linear-gradient(#000 0 0);             /* dual mask */
+  -webkit-mask:linear-gradient(#000 0 0) content-box,
+                   linear-gradient(#000 0 0);
+  mask-composite:exclude;
+  -webkit-mask-composite:xor;
+
+  animation:spinLine 1.6s linear infinite;
+  z-index:1;                                  /* sits above dark fill */
+}
+
+/* rotate the slice around the pill */
+@keyframes spinLine{
+  to{ transform:rotate(1turn); }
+}
+
+/* semantic classes still present (visuals identical) */
+.skill-pill.beginner,
+.skill-pill.intermediate,
+.skill-pill.advanced{}
+
+
 .skills {
   padding: 60px 0;
 }

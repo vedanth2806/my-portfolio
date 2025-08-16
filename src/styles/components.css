@@ -43,6 +43,45 @@
 }
 
 /* Enhanced Skill Card Animations */
+
+/* keep the spinning border you already have -------------------- */
+.skill-pill{                         /* make sure these are present */
+  position: relative;
+  overflow: hidden;                 /* hides overflow of ::after */
+  /* …everything else from the previous answer…                   */
+}
+
+/* ---------- moving sheen across the pill ---------------------- */
+.skill-pill::after{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-100%;                       /* start fully outside left */
+  width:100%;
+  height:100%;
+  background:linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.35),
+            transparent);
+  animation:shimmer 2.2s infinite;
+  z-index:0;                        /* sits below the spinning border (z-1) */
+  pointer-events:none;
+}
+
+/* keyframes: slide sheen left → right */
+@keyframes shimmer{
+  to{ left:100%; }
+}
+
+
+
+
+
+
+
+
+
 .skill-card {
   position: relative;
   transition: all 0.3s ease;

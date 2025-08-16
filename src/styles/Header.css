@@ -1,27 +1,37 @@
+/* ----------  GLOBAL HEADER  ---------- */
 .header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  /* background: rgba(255, 255, 255, 0.95); */
-  left: 0%;
+  /* background: rgba(25, 25, 36, 0.95); */
   backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.15);
   z-index: 1000;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 
-.header .container-header {
+/* ----------  FLEX CONTAINER  ---------- */
+.container-header {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;   /* keeps nav centred */
   align-items: center;
   padding: 1rem 20px;
-  font-size: 1.5rem  ;
 }
 
+/* ----------  LOGO  ---------- */
+.logo {
+  position: absolute;
+  left: 70px;                /* space for hamburger (20px) + gap (30px) */
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .logo a {
   font-size: 2rem;
   font-weight: 700;
-  color: #333;
   text-decoration: none;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
@@ -29,7 +39,13 @@
   background-clip: text;
 }
 
-.nav ul {
+/* ----------  DESKTOP NAV  ---------- */
+.desktop-nav {
+  position: relative;
+  z-index: 1500;
+}
+
+.desktop-nav ul {
   display: flex;
   list-style: none;
   gap: 2rem;
@@ -37,73 +53,99 @@
   padding: 0;
 }
 
-.nav a {
-  /* color: #333; */
-    color: white;
-
+.desktop-nav a {
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  transition: all 0.3s ease;
-  position: relative;
+  transition: 0.25s;
 }
 
-.nav a:hover,
-.nav a.active {
+.desktop-nav a:hover,
+.desktop-nav a.active {
   color: #667eea;
-  background: rgba(102, 126, 234, 0.1);
+  background: rgba(102,126,234,0.12);
 }
 
+/* ----------  HAMBURGER  ---------- */
 .hamburger {
-  /* display: flex;
-  flex-direction: column; */
+  display: none;             /* shown in media-query */
+  position: absolute;
+  left: 20px;
+  top: 100%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  background: none;
+  border: none;
   cursor: pointer;
-  /* gap: 4px; */
+  padding: 0;
+  z-index: 1700;
 }
 
-.hamburger a {
-  display: inline-block;
-  padding: 12px 30px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
 }
 
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-  
-  .nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-  }
-  
-  .nav-open {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .nav ul {
-    flex-direction: column;
-    padding: 1rem 0;
-    gap: 0;
-  }
-  
-  .nav a {
-    display: block;
-    padding: 1rem 2rem;
-    border-radius: 0;
-  }
+/* ----------  MOBILE SIDEBAR (LEFT)  ---------- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;              /* hidden off-canvas */
+  width: 250px;
+  height: 100vh;
+  background: #191924;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.6);
+  padding-top: 70px;         /* header height offset */
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 1500;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.15rem;
+  padding: 1rem 0;
+  transition: 0.25s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #667eea;
+  background: rgba(102,126,234,0.12);
+}
+
+/* ----------  OVERLAY  ---------- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 250px;              /* right edge of sidebar */
+  width: calc(100vw - 250px);
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  z-index: 1400;
+}
+
+/* ----------  RESPONSIVE BREAKPOINTS  ---------- */
+@media (max-width: 1200px) {
+  .desktop-nav { display: none; }   /* hide centred nav */
+  .hamburger   { display: flex; }   /* show burger */
 }
