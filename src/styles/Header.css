@@ -148,4 +148,5 @@
 @media (max-width: 1200px) {
   .desktop-nav { display: none; }   /* hide centred nav */
   .hamburger   { display: flex; }   /* show burger */
+  .logo{top: 100%;}
 }
