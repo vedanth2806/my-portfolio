@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Home = () => {
   return (
@@ -9,14 +9,21 @@ const Home = () => {
             <h1 className="hero-title">
               Hi, I'm <span className="title-gradient">Vedanth R Kumar</span>
             </h1>
-            <h2 className="hero-subtitle">Software Engineer & Backend Developer</h2>
+            <h2 className="hero-subtitle">
+              Software Engineer | Full Stack Developer
+            </h2>
             <p className="hero-description">
-              Passionate about creating scalable backend solutions and innovative applications. 
-              Currently exploring modern web technologies and building impactful projects.
+              Passionate about creating scalable Full Stack solutions and
+              innovative applications. Currently exploring modern web
+              technologies and building impactful projects.
             </p>
             <div className="hero-buttons">
-              <a href="/contact" className="btn btn-primary">Get In Touch</a>
-              <a href="/projects" className="btn btn-secondary">View My Work</a>
+              <a href="/contact" className="btn btn-primary">
+                Get In Touch
+              </a>
+              <a href="/projects" className="btn btn-secondary">
+                View My Work
+              </a>
             </div>
           </div>
           <div className="hero-image">

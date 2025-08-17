@@ -656,6 +656,14 @@ background :linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     align-items: flex-start;
     gap: 10px;
   }
+
+  .cont-1{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  grid-template-columns: 0;
+}
+
 }
 
 @media (max-width: 480px) {
