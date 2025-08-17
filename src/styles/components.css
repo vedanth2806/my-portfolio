@@ -311,6 +311,12 @@
 @media (max-width: 768px) {
   .contact-form {
     padding: 20px;
+    margin: 3rem;
+  }
+
+  .contact-form-section, .contact-content {
+    width:70vh;
+
   }
   
   .skill-card,
