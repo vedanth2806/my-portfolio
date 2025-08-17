@@ -11,6 +11,9 @@ const Footer = () => {
             <p>
               Software Engineer passionate about creating innovative solutions.
             </p>
+            
+
+            <p> 📞 +91 9019079433 </p>
           </div>
           <div className="footer-section">
             <h4>Quick Links</h4>

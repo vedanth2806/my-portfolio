@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: "AgriTrust",
       description: " A Digital Marketplace for Farmers and Buyers with blockchain transperancy. A scalable REST API built with Node.js and Express for an e-commerce platform with user authentication, product management, and order processing.",
-      technologies: ["Node.js", "Express", "MySQL", "Flutter", "Google Cloud Platform"],
+      technologies: ["Node.js", "Express", "MySQL", "Flutter", "Google Cloud Platform", "Docker"],
       githubLink: "https://github.com/vedanth2806/AgriTrust",
       // liveLink: "#"
     },
@@ -28,7 +28,7 @@ const Projects = () => {
     {
       title: "React Portfolio Website",
       description: "This responsive portfolio website showcasing my projects and skills, built with React and modern web technologies.",
-      technologies: ["React", "CSS3", "JavaScript", "Responsive Design"],
+      technologies: ["React", "CSS3", "JavaScript", "Responsive Design", "Git"],
       githubLink: "#",
       // liveLink: "#"
     },
