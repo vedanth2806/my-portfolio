@@ -8,6 +8,8 @@ const Projects = () => {
       description: " A Digital Marketplace for Farmers and Buyers with blockchain transperancy. A scalable REST API built with Node.js and Express for an e-commerce platform with user authentication, product management, and order processing.",
       technologies: ["Node.js", "Express", "MySQL", "Flutter", "Google Cloud Platform", "Docker"],
       githubLink: "https://github.com/vedanth2806/AgriTrust",
+      bg: "/projects/agritrust.png"
+
       // liveLink: "#"
     },
 
@@ -16,6 +18,7 @@ const Projects = () => {
       description: "Low-code application developed using Mendix platform for business process automation and workflow management. The application facilitates online shopping with multiple user roles and complete order management system from product browsing to delivery tracking.",
       technologies: ["Mendix", "Low-Code", "Business Logic"],
       githubLink: "https://github.com/vedanth2806/Customer-Purchase-Portal-MENDIX-",
+      bg: "/projects/customer-purchase-portal.jpg"
       // liveLink: "#"
     },
     {
@@ -23,6 +26,7 @@ const Projects = () => {
       description: "BidderBoy is a comprehensive web-based auction platform that enables users to buy and sell items through competitive bidding. The system facilitates secure transactions between buyers and sellers while providing real-time auction management capabilities.",
       technologies: ["Flask", "sqllite"],
       githubLink: "https://github.com/vedanth2806/Bidding-web-application-Flask",
+      bg: "/projects/online-auction.jpg"
       // liveLink: "#"
     },
     {
@@ -30,13 +34,22 @@ const Projects = () => {
       description: "This responsive portfolio website showcasing my projects and skills, built with React and modern web technologies.",
       technologies: ["React", "CSS3", "JavaScript", "Responsive Design", "Git"],
       githubLink: "#",
+      bg: "/projects/portfolio.jpg"
       // liveLink: "#"
     },
     {
-      title: " Selenium-Based Automated Data Entry for Hospital Management",
+      title: "Selenium-Based Automated Data Entry for Hospital Management",
       description: "Automated bulk appointment data entry into an online hospital management system using Selenium significantly reduced the time and effort required for data input while improving both the efficiency and accuracy of the data entry process",
       technologies: ["Selenium"],
       githubLink: "https://github.com/vedanth2806/Selenium",
+      bg: "/projects/hospital-management.png"
+    },
+    {
+      title: "Cine Verse",
+      description: "A full-stack video streaming application built with Spring Boot backend and Flutter frontend, featuring user authentication, video upload/streaming, ratings and comments.",
+      technologies:["Spring Boot","Flutter","JWT tokens"],
+      githubLink:"https://github.com/vedanth2806/Cine-verse",
+      bg:"/projects/cine_verse.jpg"
     }
   ];
 
@@ -47,7 +60,7 @@ const Projects = () => {
         <p className="projects-intro">
           Here are some of the projects I've worked on, showcasing my skills in various technologies.
         </p>
-        
+
         <div className="projects-grid">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
