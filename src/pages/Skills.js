@@ -15,7 +15,8 @@ const Skills = () => {
       skills: [
         { name: "Express.js", level: 20 },
         { name: "RESTful APIs", level: 20 },
-        { name: "Flask", level: 20 },
+        { name: "SQLite", level: 20 },
+        {name:"gRPC",level:20},
         {name:"Spring Boot", level:60},
         { name: "MySQL", level: 60 },
         { name: "Node.js", level: 60 },
@@ -42,6 +43,7 @@ const Skills = () => {
       skills: [
         { name: "Docker", level: 20 },
         { name: "Git", level: 60 },
+        {name:"Jira",level:90}
       ],
     },
   ];

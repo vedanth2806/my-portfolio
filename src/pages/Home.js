@@ -27,7 +27,12 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-image">
-            <div className="placeholder-avatar">VRK</div>
+            {/* <div className="placeholder-avatar">VRK</div> */}
+            <img
+              src="/assets/profile1.jpeg"
+              alt="Vedanth R Kumar"
+              className="hero-profile-img"
+            />
           </div>
         </div>
       </section>
@@ -36,8 +41,8 @@ const Home = () => {
         <div className="container">
           <div className="stats-grid">
             <div className="stat-card">
-              <h3>2+</h3>
-              <p>Years of Experience</p>
+              <h3>1+</h3>
+              <p>year of Experience</p>
             </div>
             <div className="stat-card">
               <h3>10+</h3>

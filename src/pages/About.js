@@ -33,30 +33,73 @@ const About = () => {
 
         <section className="experience">
           <h2>
-            Professional <span class="title-gradient">Experience</span>
+            Professional <span className="title-gradient">Experience</span>
           </h2>
           <div className="experience-item">
             <div className="experience-header">
-              <h3>Web Developer Intern</h3>
-              <span className="company">Titan Company Ltd</span>
+              <h3>Software Engineer</h3>
+              <div className="company-details">
+                <span className="company">
+                  Agilophiles Technology private Ltd
+                </span>
+                <span className="experience-date">
+                  Dec 2025 - Present
+                </span>
+              </div>
             </div>
-            <p className="experience-description">
-              Gained hands-on experience in web development, working on
-              enterprise-level applications and contributing to various
-              development projects using mendix technologies and best practices.
-            </p>
+            <ul className="experience-bullets">
+              <li>
+                Implemented secure file encryption/decryption (AES) for sensitive
+                documents and improving data protection compliance.
+              </li>
+              <li>
+                Designed and implemented backend services in Go, including GRPC APIs integrated
+                with database PostgreSQL and drift, used by the Flutter app.
+              </li>
+              <li>
+                Participated in code reviews, debugging and performance
+                optimization to ensure stability and maintainability of the
+                codebase.
+              </li>
+              <li>
+                Presented bi-weekly product demos to clients and
+                participated in weekly Agile standups and planning meetings,
+                translating requirements into technical tasks and ensuring timely
+                feature delivery.
+              </li>
+            </ul>
+          </div>
+          
+          <div className="experience-item">
+            <div className="experience-header">
+              <h3>Web Developer Intern</h3>
+              <div className="company-details">
+                <span className="company">Titan Company Ltd</span>
+                <span className="experience-date">
+                  Nov 2023 - Dec 2023
+                </span>
+              </div>
+            </div>
+            <ul className="experience-bullets">
+              <li>
+                Gained hands-on experience in web development, working on
+                enterprise-level applications and contributing to various
+                development projects using Mendix technologies and best practices.
+              </li>
+            </ul>
           </div>
         </section>
 
         <section className="interests">
           <h2>
-             Technical <span class="title-gradient">Focus</span>
+            Technical <span class="title-gradient">Focus</span>
           </h2>
           <div className="interests-grid">
             <div className="interest-card">
               <h3>Full Stack Development</h3>
               <p>
-                Interested in designing scalable and efficient Full Stack solutions.
+                Interested in designing scalable and efficient Full Stack
+                solutions.
               </p>
             </div>
 
