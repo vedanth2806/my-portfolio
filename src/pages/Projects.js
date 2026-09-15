@@ -45,7 +45,7 @@ const Projects = () => {
       // liveLink: "#"
     },
     {
-      title: " Selenium-Based Automated Data Entry for Hospital Management",
+      title: "Selenium-Based Automated Data Entry for Hospital Management",
       description: "Automated bulk appointment data entry into an online hospital management system using Selenium significantly reduced the time and effort required for data input while improving both the efficiency and accuracy of the data entry process",
       technologies: ["Selenium"],
       githubLink: "https://github.com/vedanth2806/Selenium",
@@ -61,7 +61,7 @@ const Projects = () => {
         <p className="projects-intro">
           Here are some of the projects I've worked on, showcasing my skills in various technologies.
         </p>
-        
+
         <div className="projects-grid">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
