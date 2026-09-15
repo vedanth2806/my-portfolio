@@ -4,10 +4,19 @@ import ProjectCard from '../components/ProjectCard';
 const Projects = () => {
   const projects = [
     {
+      title:"Cine Verse",
+      description:"Built a movie streaming platform with REST API backend where admins can upload movies with metadata and thumbnails, and users can browse, watch, rate and comment on the movie catalog through a Flutter mobile application.",
+      technologies:["Flutter", "Spring boot","MySQL"],
+      githubLink:"",
+      img:"/assets/cineverse.png",
+      // livelink:"#",
+    },
+    {
       title: "AgriTrust",
       description: " A Digital Marketplace for Farmers and Buyers with blockchain transperancy. A scalable REST API built with Node.js and Express for an e-commerce platform with user authentication, product management, and order processing.",
       technologies: ["Node.js", "Express", "MySQL", "Flutter", "Google Cloud Platform", "Docker"],
       githubLink: "https://github.com/vedanth2806/AgriTrust",
+      img:"/assets/AgriTrust.png",
       // liveLink: "#"
     },
 
@@ -16,6 +25,7 @@ const Projects = () => {
       description: "Low-code application developed using Mendix platform for business process automation and workflow management. The application facilitates online shopping with multiple user roles and complete order management system from product browsing to delivery tracking.",
       technologies: ["Mendix", "Low-Code", "Business Logic"],
       githubLink: "https://github.com/vedanth2806/Customer-Purchase-Portal-MENDIX-",
+      img:"/assets/customerPurchasePortal.png",
       // liveLink: "#"
     },
     {
@@ -23,6 +33,7 @@ const Projects = () => {
       description: "BidderBoy is a comprehensive web-based auction platform that enables users to buy and sell items through competitive bidding. The system facilitates secure transactions between buyers and sellers while providing real-time auction management capabilities.",
       technologies: ["Flask", "sqllite"],
       githubLink: "https://github.com/vedanth2806/Bidding-web-application-Flask",
+      img:"/assets/onlineAuction.png",
       // liveLink: "#"
     },
     {
@@ -30,6 +41,7 @@ const Projects = () => {
       description: "This responsive portfolio website showcasing my projects and skills, built with React and modern web technologies.",
       technologies: ["React", "CSS3", "JavaScript", "Responsive Design", "Git"],
       githubLink: "#",
+      img:"/assets/portfolio.png",
       // liveLink: "#"
     },
     {
@@ -37,12 +49,14 @@ const Projects = () => {
       description: "Automated bulk appointment data entry into an online hospital management system using Selenium significantly reduced the time and effort required for data input while improving both the efficiency and accuracy of the data entry process",
       technologies: ["Selenium"],
       githubLink: "https://github.com/vedanth2806/Selenium",
+            img:"/assets/selenium.png",
+
     }
   ];
 
   return (
     <div className="projects">
-      <div className="container">
+      <div className="container" id='project-container'>
         <h1>My <span class="title-gradient">Projects</span></h1>
         <p className="projects-intro">
           Here are some of the projects I've worked on, showcasing my skills in various technologies.

@@ -1,7 +1,7 @@
 /* Components.css - Additional component-specific styles */
 
 /* Enhanced Project Card Styles */
-.project-card {
+/* .project-card {
   position: relative;
   overflow: hidden;
 }
@@ -40,7 +40,11 @@
 
 .project-card:hover .project-header::after {
   transform: scaleX(1);
-}
+} */
+
+
+
+
 
 /* Enhanced Skill Card Animations */
 
@@ -48,7 +52,6 @@
 .skill-pill{                         /* make sure these are present */
   position: relative;
   overflow: hidden;                 /* hides overflow of ::after */
-  /* …everything else from the previous answer…                   */
 }
 
 /* ---------- moving sheen across the pill ---------------------- */
@@ -73,14 +76,6 @@
 @keyframes shimmer{
   to{ left:100%; }
 }
-
-
-
-
-
-
-
-
 
 .skill-card {
   position: relative;

@@ -6,6 +6,9 @@ const ProjectCard = ({ project }) => {
       <div className="project-header">
         <h3>{project.title}</h3>
       </div>
+      <div className='project-img'>
+        <img src={project.img}></img>
+      </div>
       <div className="project-content">
         <p>{project.description}</p>
         <div className="project-technologies">
